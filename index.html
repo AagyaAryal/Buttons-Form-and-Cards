@@ -1,0 +1,415 @@
+<html>
+    <head>
+        <title>ibootcamp_assignment1</title>
+    </head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin-left: 50px;
+            
+        }
+        .h2{
+            fon
+        }
+        .one{
+            padding-left: 20px;
+            padding-right: 60%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color:#cce5ff;
+            color: rgb(43, 75, 134);
+            border-radius:.25rem ;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .blue{
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            margin:none;
+            border-radius: 5px;
+            }
+        button{
+            border-bottom-right-radius: .25rem;
+            font-size: medium;
+            border-radius: 0.4rem;
+            margin-bottom: 0px;
+            border-width: thin;
+            
+            
+
+            
+        }
+        .primary{
+            background-color: #007bff;
+            color:white;
+            padding: 10px;
+            font-size: medium; 
+            border:none; 
+        }
+        .primary:hover{ 
+            background-color:#0b55a3; 
+        }
+        .secondary{
+            background-color:gray ;
+            color:white;
+            padding:10px;
+            font-size: medium;
+            border:none; 
+        }
+        .secondary:hover{
+            background-color: rgb(163, 159, 159); 
+        }
+        .success{
+            background-color: rgb(99, 170, 99);
+            color:white;
+            padding:10px;
+            font-size: medium;
+            border:none; 
+        }
+        .success:hover{
+            background-color:rgb(66, 109, 66) ;
+        }
+        .danger{
+            background-color:red ;
+            color: white;
+            padding: 10px;
+            font-size: medium;
+            border:none; 
+        }
+        .danger:hover{
+            background-color: rgb(175, 41, 41);
+        }
+        .warning{
+            background-color:#ffc107;
+            color: white;
+            padding: 10px;
+            font-size: medium;
+            border:none; 
+        }
+        .warning:hover{
+            background-color:#c4a036;
+        }
+        .info{
+            background-color: #17a2b8;
+            color: white;
+            padding: 10px;
+            font-size: medium;
+            border:none; 
+        }
+        .info:hover{
+            background-color: #108597;
+        }
+        .light{
+            background-color: #f8f9fa;
+            color:black;
+            padding:10px;
+            font-size: medium;
+            border:none; 
+        }
+        .light:hover{
+            background-color: rgb(238, 234, 234);
+        }
+        .dark{
+            background-color:#343a40;
+            color: white;
+            padding:10px;
+            font-size: medium;
+            border:none; 
+        }
+        .dark:hover{
+            background-color: #424950;
+        }
+        .a{
+            background-color: white;
+            color:#007bff ;
+            padding:10px;
+            border-color: #007bff;
+            font-size: medium;
+        
+        }
+        .a:hover{
+            background-color: #007bff ;
+            color:white;
+        }
+        .b{
+            background-color: white;
+            color:#6c757d ;
+            padding:10px;
+            border-color: #6c757d;
+            font-size: medium;
+        }
+        .b:hover{
+            background-color: #6c757d ;
+            color:white;
+        }
+        .c{
+            background-color: white;
+            color:#28a745 ;
+            padding:10px;
+            border-color: #28a745;
+            font-size: medium;
+        }
+        .c:hover{
+            background-color: #28a745 ;
+            color:white;
+        }
+        .d{
+            background-color: white;
+            color:#dc3545;
+            padding:10px;
+            border-color: #dc3545;
+            font-size: medium;
+        }
+        .d:hover{
+            background-color: #dc3545;
+            color:white;
+        }
+        .e{
+            background-color: white;
+            color:#ffc107 ;
+            padding:10px;
+            border-color: #ffc107;
+            font-size: medium;
+        }
+        .e:hover{
+            background-color: #ffc107;
+            color:white;
+        }
+        .f{
+            background-color: white;
+            color:#343a40;
+            padding:10px;
+            border-color: #343a40;
+            font-size: 15px;
+            font-size: medium;
+        }
+        .f:hover{
+            background-color: #343a40;
+            color:white;
+        }
+        .g{
+            background-color: white;
+            color:white;
+            padding:10px;
+            border-color:white;
+            font-size: 15px;
+            font-size: medium;
+        }
+        .g:hover{
+            background-color: white;
+            color:black;
+        }
+        .h{
+        background-color: white;
+        color:black;
+        padding:10px;
+        border-color: black;
+        font-size: 15px;
+        font-size: medium;
+        }
+        .h:hover{
+            background-color: black;
+            color:white;
+        }
+        .largebutton1{
+            background-color: #007bff;
+            color: white;
+            padding:15px;
+            font-size: large;
+            margin-bottom: 6px;
+        }
+        .largebutton1:hover{
+            background-color: #1c61b1;
+        }
+        .largebutton2{
+            background-color: gray;
+            color: white;
+            padding:15px;
+            font-size: large;
+        }
+        .largebutton2:hover{
+            background-color: rgb(163, 159, 159);
+        }
+        .smallbutton1{
+            background-color: #007bff;
+            color: white;
+            padding:8px;
+            font-size: medium;
+        
+        }
+        .smallbutton:hover{
+            background-color: #286ebe;
+        }
+        .smallbutton2{
+            background-color:gray;
+            color:white;
+            padding:8px;
+            font-size: medium;
+        }
+        .smallbutton2:hover{
+            background-color: rgb(163, 159, 159);
+        }
+        .graybg{
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgb(243, 242, 242);
+            height:120px;
+            width:1060px;
+        }
+        .blb1{
+            background-color:#007bff;
+            color: white;
+            padding-left:450px;
+            padding-right: 450px;
+            text-align: center;
+            font-size: larger;
+            height:55px;
+        }
+        .blb1:hover{
+            background-color:#286ebe ;
+        }
+        .blb2{
+            background-color:gray;
+            color: white;
+            padding-left:450px;
+            padding-right: 450px;
+            text-align: center;
+            font-size: larger;
+            height:55px;
+            margin-top: 5px;
+        }
+        .blb2:hover{
+            background-color:rgb(163, 159, 159) ;
+        }
+        .card{
+            margin-bottom: 0px;
+        }
+        .cardtitle{
+            border:thin;
+            margin-top: 0px;
+            width: 245px;
+            height: 180;
+            border:thin;
+            border-radius: 5px;
+            border-color: gray;
+            border-style:solid;
+            
+            padding:20px;
+        }
+        
+        .largetext{
+            height: 60px;
+            width: 600px;
+            font-size: large;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .normaltext{
+            height: 50px;
+            width: 600px;
+            font-size: medium;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .shorttext{
+            height: 30px;
+            width: 600px;
+            font-size: small;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .email{
+            height: 40px;
+            width: 600px;
+            font-size: medium;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .password{
+            height: 40px;
+            width: 600px;
+            font-size: medium;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</body>
+<h2 class="h2">Alerts</h2>
+<p class="one">This is a primary alert-check it out!</p>
+<h2>Buttons</h2>
+<button class="primary">Button primary</button>
+<button class="secondary">Button secondary</button>
+<button class="success">Button sucsess</button>
+<button class="danger">Button danger</button>
+<button class="warning">Button warning</button>
+<button class="info">Button info</button>
+<button class="light">Button light</button>
+<button class="dark"> Button dark</button>
+
+<h2>Buttons Outline</h2>
+<button class="a">Button primary</button>
+<button class="b">Button secondary</button>
+<button class="c">Button sucsess</button>
+<button class="d">Button danger</button>
+<button class="e">Button warning</button>
+<button class="f">Button info</button>
+<button class="g">Button light</button>
+<button class="h">Button dark</button>
+
+<h2>Buttons Size</h2>
+<button class="largebutton1">Large button</button>
+<button class="largebutton2">Large button</button><br>
+<button class="smallbutton1">Small button</button>
+<button class="smallbutton2">Small button</button>
+
+<div>
+<h2>Button Block</h2>
+<div class="graybg">
+<button class="blb1">Block level button</button><br>
+<button class="blb2">Block level button</button>
+</div>
+</div>
+
+<div>
+    <h2>Cards</h2>
+    <div class="card"> 
+    <img src="dog.jpeg"height="180px" width="286px"></div>
+    <div class="cardtitle"><h3>Card Title</h3>
+    <p>Some quick example text to build<br> on the card title and make up the <br> bulk of the cards content.</p>
+    <button class="blue">Go somewhere</button></div>
+    </div>
+</div>
+
+<h2>Feature Cards</h2>
+<div>
+    <div>
+        Featured
+    </div>
+    <div>
+        <h3>Special title treatment</h3>
+        <p>With supporting text below as a natural lead-in to additional content.</p>
+        <button class="blue">Go somewhere</button>
+    </div>
+
+</div>
+<h2>Logic Form</h2>
+Email address<br> <br>
+<input class=email type="email" placeholder="Enter email"><br>
+<label>We will never share your email with anyone else. </label>
+<h3>Password</h3>
+<input class ="password" type="password" placeholder="Password"><br>
+<input type="checkbox"><label>Check me out</label><br><br>
+<button class="blue">Submit</button>
+
+<h2>Forms Size</h2>
+<input class="largetext" type="text" placeholder="Large Text"> <br>
+<input class="normaltext" type="text" placeholder="Normal Text"><br>
+<input class="shorttext" type="text" placeholder="Small Text">
+
+</body>
+</html>
